@@ -1,0 +1,28 @@
+RewriteEngine On
+RewriteBase /home.html
+RewriteCond %{REQUEST_FILENAME} !-f [OR] !-d
+RewriteCond %{REQUEST_FILENAME} !-s
+RewriteRule ^register$ /register.php [L]
+RewriteRule ^login$ /login.php [L]
+RewriteRule ^about$ /about.php [L]
+RewriteRule ^ranking$ /ranking.php [L]
+RewriteRule ^profile$ /profile.php [L]
+RewriteRule ^logout$ /logout.php [L]
+RewriteRule ^forgot-password$ /forgotpassword.php [L]
+RewriteRule ^nap-tien$ /topup/index.php [L]
+RewriteRule ^change-password$ /changepassword.php [L]
+RewriteRule ^([0-9]+)/([0-9]+).png$ /avatar.php?user_id=$1&nv=$2 [L]
+RewriteRule ^equip$ /equip.php [L]
+RewriteRule ^changeemail$ /changeemail.php [L]
+RewriteRule ^addemail$ /addemail.php [L]
+RewriteRule ^changesignature$ /changesignature.php [L]
+RewriteRule ^addsignature$ /addsignature.php [L]
+RewriteRule ^addpoint$ /addpoint.php [L]
+RewriteRule ^forgotsignature$ /forgotsignature.php [L]
+RewriteRule ^shop/dang-ban$ /shop/sell.php [L]
+RewriteRule ^shop/quan-ly$ /shop/manager.php [L]
+RewriteRule ^shop/$ /shop/index.php?page=1 [L]
+RewriteRule ^([0-9]+)/shop/$ /shop/index.php?page=$1 [L]
+RewriteRule ^shop/([0-9]+)/account$ /shop/account.php?user_id=$1 [L]
+RewriteRule ^shop/([0-9]+)/edit$ /shop/edit.php?id=$1 [L]
+RewriteRule ^shop/([0-9]+)/delete$ /shop/delete.php?id=$1 [L]

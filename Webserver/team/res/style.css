@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #EAEAEA; 
+}
+body, td, span {
+    font-family: Verdana, sans-serif;
+    font-size: small;
+}
+h2, h3 {
+}
+hr {
+    margin: 0;
+}
+#table1 {
+    border: none;
+    width: 100%;
+}
+#header {
+    color: white;
+    font-weight: bold;
+}
+#menu {
+    background-color: #CCC;
+}
+a {
+    text-decoration: none;
+    color: darkblue;
+}
+a:hover {
+    text-decoration: underline;
+}
+tr.header3 {
+    background-color: #D9D9D9;
+}
+thead tr {
+    background-color: #6699CC;
+}
+textarea {
+    resize: none;
+}
+
+#notf {
+    color: red;
+    font-size: small;
+}
